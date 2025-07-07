@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シェアキッチン COME Lab - はたけもり</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', 'Inter', sans-serif;
+        }
+        .hero-kitchen-bg {
+            background-image: url('https://placehold.co/1600x800/d4e0c4/333333?text=%E3%82%B7%E3%82%A7%E3%82%A2%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%E3%81%AE%E9%AD%85%E5%8A%9B%E7%9A%84%E3%81%AA%E5%86%99%E7%9C%9F');
+            background-size: cover;
+            background-position: center;
+        }
+        /* アコーディオン用 */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary .plus-icon {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ヘッダー -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-green-800">はたけもり</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-600 hover:text-green-700">はたけもりについて</a>
+                <a href="share-kitchen.html" class="text-green-700 font-bold">シェアキッチン</a>
+                <a href="share-office.html" class="text-gray-600 hover:text-green-700">シェアオフィス</a>
+                <a href="#" class="text-gray-600 hover:text-green-700">お知らせ</a>
+                <a href="#" class="text-gray-600 hover:text-green-700">アクセス</a>
+            </nav>
+            <a href="#" class="hidden md:inline-block bg-green-700 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-800 transition-colors">お問い合わせ</a>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- モバイルメニュー -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#" class="block py-2 text-gray-600 hover:text-green-700">はたけもりについて</a>
+            <a href="share-kitchen.html" class="block py-2 text-green-700 font-bold">シェアキッチン</a>
+            <a href="share-office.html" class="block py-2 text-gray-600 hover:text-green-700">シェアオフィス</a>
+            <a href="#" class="block py-2 text-gray-600 hover:text-green-700">お知らせ</a>
+            <a href="#" class="block py-2 text-gray-600 hover:text-green-700">アクセス</a>
+            <a href="#" class="mt-4 inline-block w-full text-center bg-green-700 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-800 transition-colors">お問い合わせ</a>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- ヒーローセクション -->
+        <section class="hero-kitchen-bg text-white">
+            <div class="bg-black/40 h-full w-full flex items-center justify-center py-24 md:py-32">
+                <div class="text-center">
+                    <p class="text-lg md:text-xl mb-2">Share Kitchen</p>
+                    <h1 class="text-4xl md:text-6xl font-bold">COME Lab</h1>
+                    <p class="mt-4 text-xl md:text-2xl">あなたの「食」の夢を、ここから育てよう。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 特徴・できることセクション -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-green-800 mb-12">COME Labでできること</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div class="flex flex-col items-center">
+                        <div class="bg-green-100 rounded-full p-6 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-green-700" viewBox="0 0 20 20" fill="currentColor"><path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v10a1 1 0 001 1zM4 5a1 1 0 00-1 1v10a1 1 0 001 1h2a1 1 0 001-1V6a1 1 0 00-1-1H4z" /></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">1日カフェオーナー</h3>
+                        <p>週末だけ、一日だけ。あなたのカフェを開店。メニュー開発の試作やテストマーケティングにも最適です。</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-green-100 rounded-full p-6 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-green-700" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" /></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">料理教室・ワークショップ</h3>
+                        <p>パン教室、お菓子作り、味噌作りなど。あなたの得意を教える場として。生徒さんと一緒に料理を楽しめます。</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-green-100 rounded-full p-6 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-green-700" viewBox="0 0 20 20" fill="currentColor"><path d="M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 16h-8z" /></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">製造・仕込みの拠点</h3>
+                        <p>菓子製造業の許可を取得済み。マルシェで販売するお菓子やジャムなど、あなたの商品の製造拠点として活用できます。</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-green-100 rounded-full p-6 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-green-700" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 16a2 2 0 110-4 2 2 0 010 4z" /></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">仲間とのパーティー</h3>
+                        <p>畑で採れた野菜を使って、仲間と料理を楽しむ。誕生日会やイベントなど、貸し切りでプライベートな時間を。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- スペース・設備紹介 -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-green-800 mb-12">スペース・設備</h2>
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                    <div class="space-y-4">
+                        <img src="https://placehold.co/600x400/e0e8d8/333333?text=%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3%E5%85%A8%E6%99%AF" alt="キッチン全景" class="rounded-lg shadow-lg w-full h-auto">
+                        <img src="https://placehold.co/600x400/e0e8d8/333333?text=%E5%AE%A2%E5%B8%AD%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9" alt="客席スペース" class="rounded-lg shadow-lg w-full h-auto">
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-2xl mb-4">充実の設備で、すぐに始められる</h3>
+                        <p class="mb-6">元お米屋さんをリノベーションした、温かみのある空間。カフェ営業に必要な設備や調理器具、食器類を豊富に取り揃えています。</p>
+                        <ul class="space-y-2 list-disc list-inside text-lg">
+                            <li>ガスオーブンレンジ</li>
+                            <li>3口ガスコンロ</li>
+                            <li>業務用冷蔵庫・冷凍庫</li>
+                            <li>2層シンク</li>
+                            <li>調理器具一式（鍋、フライパン等）</li>
+                            <li>食器類・カトラリー</li>
+                            <li>プロジェクター＆スクリーン</li>
+                            <li>Wi-Fi完備</li>
+                        </ul>
+                        <a href="#" class="mt-6 inline-block text-green-700 font-bold hover:underline">設備一覧を詳しく見る &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 料金プラン -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-green-800 mb-12">料金プラン</h2>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                    <div class="border-2 border-green-600 rounded-lg p-8 flex flex-col">
+                        <h3 class="font-bold text-2xl text-center mb-4">基本プラン</h3>
+                        <p class="text-center text-gray-600 mb-6">単発でのご利用に</p>
+                        <div class="text-center my-4">
+                            <span class="text-4xl font-bold">¥3,000</span>
+                            <span class="text-gray-600">/ 時間</span>
+                        </div>
+                        <ul class="space-y-2 mb-8 flex-grow">
+                            <li><span class="text-green-500 mr-2">✔</span> 3時間から利用可能</li>
+                            <li><span class="text-green-500 mr-2">✔</span> 菓子製造業許可付き</li>
+                            <li><span class="text-green-500 mr-2">✔</span> 調理器具・食器利用料込み</li>
+                        </ul>
+                        <a href="#" class="w-full text-center bg-green-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-green-800 transition-colors">このプランで問い合わせる</a>
+                    </div>
+                    <div class="border border-gray-300 rounded-lg p-8 flex flex-col">
+                        <h3 class="font-bold text-2xl text-center mb-4">定期利用プラン</h3>
+                        <p class="text-center text-gray-600 mb-6">毎週・毎月のご利用がお得</p>
+                        <div class="text-center my-4">
+                            <span class="text-2xl font-bold">月額 ¥20,000~</span>
+                            <span class="text-gray-600"></span>
+                        </div>
+                         <ul class="space-y-2 mb-8 flex-grow">
+                            <li><span class="text-green-500 mr-2">✔</span> 週1回、月2回など柔軟に対応</li>
+                            <li><span class="text-green-500 mr-2">✔</span> 荷物の保管場所あり（応相談）</li>
+                            <li><span class="text-green-500 mr-2">✔</span> HPやSNSでの告知協力</li>
+                        </ul>
+                        <a href="#" class="w-full text-center bg-amber-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-amber-700 transition-colors">詳細を問い合わせる</a>
+                    </div>
+                </div>
+                <p class="text-center mt-8 text-gray-600">※料金は全て税抜です。光熱費は別途実費を頂戴します。</p>
+            </div>
+        </section>
+
+        <!-- ご利用の流れ -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-green-800 mb-12">ご利用の流れ</h2>
+                <div class="max-w-3xl mx-auto relative">
+                    <div class="border-l-2 border-green-300 absolute h-full top-0 left-4"></div>
+                    <div class="mb-8 ml-12 relative">
+                        <div class="bg-green-600 text-white w-8 h-8 rounded-full absolute -left-16 top-1 flex items-center justify-center font-bold">1</div>
+                        <h3 class="font-bold text-xl mb-1">お問い合わせ</h3>
+                        <p>まずはフォームから、ご希望の日時や利用内容をお聞かせください。</p>
+                    </div>
+                    <div class="mb-8 ml-12 relative">
+                        <div class="bg-green-600 text-white w-8 h-8 rounded-full absolute -left-16 top-1 flex items-center justify-center font-bold">2</div>
+                        <h3 class="font-bold text-xl mb-1">見学・打ち合わせ</h3>
+                        <p>実際に施設をご覧いただき、詳細な利用方法やルールについてご説明します。</p>
+                    </div>
+                    <div class="mb-8 ml-12 relative">
+                        <div class="bg-green-600 text-white w-8 h-8 rounded-full absolute -left-16 top-1 flex items-center justify-center font-bold">3</div>
+                        <h3 class="font-bold text-xl mb-1">ご予約確定</h3>
+                        <p>利用規約にご同意いただけましたら、正式にご予約確定となります。</p>
+                    </div>
+                    <div class="ml-12 relative">
+                        <div class="bg-green-600 text-white w-8 h-8 rounded-full absolute -left-16 top-1 flex items-center justify-center font-bold">4</div>
+                        <h3 class="font-bold text-xl mb-1">ご利用当日</h3>
+                        <p>さあ、あなたの夢を形にしましょう！スタッフが利用開始時にサポートします。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- よくある質問 -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <h2 class="text-3xl font-bold text-center text-green-800 mb-12">よくある質問</h2>
+                <div class="space-y-4">
+                    <details class="bg-gray-50 p-4 rounded-lg">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between items-center">
+                            食材の持ち込みは可能ですか？
+                            <span class="plus-icon transition-transform duration-300 text-green-600 text-2xl">+</span>
+                        </summary>
+                        <p class="mt-4 text-gray-700">はい、可能です。ただし、衛生管理は利用者様の責任でお願いいたします。冷蔵庫・冷凍庫もご利用いただけます。</p>
+                    </details>
+                    <details class="bg-gray-50 p-4 rounded-lg">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between items-center">
+                            駐車場はありますか？
+                            <span class="plus-icon transition-transform duration-300 text-green-600 text-2xl">+</span>
+                        </summary>
+                        <p class="mt-4 text-gray-700">専用駐車場はございません。お近くのコインパーキングをご利用ください。搬入出時の短時間停車は可能ですので、ご相談ください。</p>
+                    </details>
+                    <details class="bg-gray-50 p-4 rounded-lg">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between items-center">
+                            キャンセル料について教えてください。
+                            <span class="plus-icon transition-transform duration-300 text-green-600 text-2xl">+</span>
+                        </summary>
+                        <p class="mt-4 text-gray-700">ご利用日の7日前までは無料、6日前〜2日前までは50%、前日・当日は100%のキャンセル料を申し受けます。ご了承ください。</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-green-900 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">はたけもり</h4>
+                    <p class="text-green-200">畑からはじまる、<br>あなたの”やってみたい”を応援する場所</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">サイトマップ</h4>
+                    <ul class="space-y-2 text-green-200">
+                        <li><a href="#" class="hover:text-white">はたけもりについて</a></li>
+                        <li><a href="share-kitchen.html" class="hover:text-white">シェアキッチン COME Lab</a></li>
+                        <li><a href="share-office.html" class="hover:text-white">シェアオフィス moribito荘</a></li>
+                        <li><a href="#" class="hover:text-white">お知らせ・イベント</a></li>
+                        <li><a href="#" class="hover:text-white">アクセス</a></li>
+                        <li><a href="#" class="hover:text-white">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">お問い合わせ</h4>
+                    <p class="text-green-200">ご見学やご利用に関するご相談など、<br>お気軽にお問い合わせください。</p>
+                    <a href="#" class="mt-4 inline-block bg-amber-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-amber-700 transition-colors">お問い合わせフォーム</a>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-green-800 pt-8 text-center text-sm text-green-300">
+                <p>&copy; 2025 はたけもり. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // モバイルメニューのトグル
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

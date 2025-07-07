@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シェアオフィス moribito荘 - はたけもり</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', 'Inter', sans-serif;
+        }
+        .hero-office-bg {
+            background-image: url('https://placehold.co/1600x800/f0e6d2/333333?text=%E3%82%B7%E3%82%A7%E3%82%A2%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B9%E3%81%AE%E8%90%BD%E3%81%A1%E7%9D%80%E3%81%84%E3%81%9F%E9%9B%B0%E5%9B%B2%E6%B0%97');
+            background-size: cover;
+            background-position: center;
+        }
+        /* アコーディオン用 */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary .plus-icon {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ヘッダー -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-green-800">はたけもり</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-600 hover:text-green-700">はたけもりについて</a>
+                <a href="share-kitchen.html" class="text-gray-600 hover:text-green-700">シェアキッチン</a>
+                <a href="share-office.html" class="text-green-700 font-bold">シェアオフィス</a>
+                <a href="#" class="text-gray-600 hover:text-green-700">お知らせ</a>
+                <a href="#" class="text-gray-600 hover:text-green-700">アクセス</a>
+            </nav>
+            <a href="#" class="hidden md:inline-block bg-green-700 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-800 transition-colors">お問い合わせ</a>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- モバイルメニュー -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#" class="block py-2 text-gray-600 hover:text-green-700">はたけもりについて</a>
+            <a href="share-kitchen.html" class="block py-2 text-gray-600 hover:text-green-700">シェアキッチン</a>
+            <a href="share-office.html" class="block py-2 text-green-700 font-bold">シェアオフィス</a>
+            <a href="#" class="block py-2 text-gray-600 hover:text-green-700">お知らせ</a>
+            <a href="#" class="block py-2 text-gray-600 hover:text-green-700">アクセス</a>
+            <a href="#" class="mt-4 inline-block w-full text-center bg-green-700 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-800 transition-colors">お問い合わせ</a>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- ヒーローセクション -->
+        <section class="hero-office-bg text-white">
+            <div class="bg-black/40 h-full w-full flex items-center justify-center py-24 md:py-32">
+                <div class="text-center">
+                    <p class="text-lg md:text-xl mb-2">Share Office</p>
+                    <h1 class="text-4xl md:text-6xl font-bold">moribito荘</h1>
+                    <p class="mt-4 text-xl md:text-2xl">昭和の趣と、新しい働き方が交差する場所。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 特徴セクション -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-green-800 mb-12">moribito荘の魅力</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="flex flex-col items-center">
+                        <div class="bg-amber-100 rounded-full p-6 mb-4">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">集中できる静かな環境</h3>
+                        <p>住宅街に佇む元アパートを改装した、静かで落ち着いた空間。日々のタスクに集中したい方に最適です。</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-amber-100 rounded-full p-6 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">多様な専門家との出会い</h3>
+                        <p>デザイナー、ライター、エンジニアなど、様々な分野のプロフェッショナルが集います。思わぬ協業が生まれるかも。</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-amber-100 rounded-full p-6 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">柔軟な利用プラン</h3>
+                        <p>集中したい時だけ使えるドロップインから、固定の席を持つ月額プランまで。あなたの働き方に合わせて選べます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- スペース紹介 -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-green-800 mb-12">スペース紹介</h2>
+                <!-- モリの間 -->
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-16">
+                    <img src="https://placehold.co/600x400/fff8e1/333333?text=%E3%83%A2%E3%83%AA%E3%81%AE%E9%96%93%EF%BC%88%E3%82%B3%E3%83%AF%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%EF%BC%89" alt="モリの間" class="rounded-lg shadow-lg w-full h-auto">
+                    <div>
+                        <h3 class="font-bold text-2xl mb-2">モリの間 <span class="text-lg font-normal text-gray-600">（コワーキングスペース）</span></h3>
+                        <p>開放的なフリーアドレスのスペース。他の利用者とのコミュニケーションも楽しめます。飲食やおしゃべりもOK。</p>
+                    </div>
+                </div>
+                <!-- 荘の間 -->
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-16">
+                     <div class="md:order-2">
+                        <img src="https://placehold.co/600x400/fff8e1/333333?text=%E8%8D%98%E3%81%AE%E9%96%93%EF%BC%88%E5%80%8B%E5%AE%A4%E3%83%96%E3%83%BC%E3%82%B9%EF%BC%89" alt="荘の間" class="rounded-lg shadow-lg w-full h-auto">
+                    </div>
+                    <div class="md:order-1">
+                        <h3 class="font-bold text-2xl mb-2">荘の間 <span class="text-lg font-normal text-gray-600">（シェアオフィス）</span></h3>
+                        <p>月額会員専用の固定席エリア。パーテーションで区切られており、より集中したい方におすすめです。</p>
+                    </div>
+                </div>
+                 <!-- 畑の間 -->
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                    <img src="https://placehold.co/600x400/fff8e1/333333?text=%E7%95%91%E3%81%AE%E9%96%93%EF%BC%88%E4%BC%9A%E8%AD%B0%E5%AE%A4%EF%BC%89" alt="畑の間" class="rounded-lg shadow-lg w-full h-auto">
+                    <div>
+                        <h3 class="font-bold text-2xl mb-2">畑の間 <span class="text-lg font-normal text-gray-600">（会議室）</span></h3>
+                        <p>打ち合わせやオンライン会議に使える個室。ホワイトボードも完備しています。（要予約）</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 料金プラン -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-green-800 mb-12">料金プラン</h2>
+                <div class="max-w-5xl mx-auto overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr>
+                                <th class="border-b-2 border-green-700 p-4 text-lg">プラン</th>
+                                <th class="border-b-2 border-green-700 p-4 text-lg">料金（税込）</th>
+                                <th class="border-b-2 border-green-700 p-4 text-lg">利用可能スペース</th>
+                                <th class="border-b-2 border-green-700 p-4 text-lg"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-amber-50">
+                                <td class="border-b p-4 font-bold">ドロップイン</td>
+                                <td class="border-b p-4">2時間: ¥1,000<br>1日: ¥2,000</td>
+                                <td class="border-b p-4">モリの間</td>
+                                <td class="border-b p-4"><a href="#" class="text-green-700 font-bold hover:underline">問い合わせる</a></td>
+                            </tr>
+                            <tr class="hover:bg-amber-50">
+                                <td class="border-b p-4 font-bold">月額フリー席プラン</td>
+                                <td class="border-b p-4">¥15,000 / 月</td>
+                                <td class="border-b p-4">モリの間</td>
+                                <td class="border-b p-4"><a href="#" class="text-green-700 font-bold hover:underline">問い合わせる</a></td>
+                            </tr>
+                            <tr class="hover:bg-amber-50">
+                                <td class="border-b p-4 font-bold">月額固定席プラン</td>
+                                <td class="border-b p-4">¥25,000 / 月</td>
+                                <td class="border-b p-4">荘の間（専用席）<br>モリの間</td>
+                                <td class="border-b p-4"><a href="#" class="text-green-700 font-bold hover:underline">問い合わせる</a></td>
+                            </tr>
+                            <tr class="hover:bg-amber-50">
+                                <td class="border-b p-4 font-bold">会議室利用</td>
+                                <td class="border-b p-4">¥1,500 / 時間</td>
+                                <td class="border-b p-4">畑の間</td>
+                                <td class="border-b p-4"><a href="#" class="text-green-700 font-bold hover:underline">問い合わせる</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                 <div class="text-center mt-8">
+                    <a href="#" class="inline-block bg-amber-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-amber-700 transition-colors">見学を予約する</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ご利用の流れ -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-green-800 mb-12">ご利用の流れ</h2>
+                <div class="max-w-3xl mx-auto relative">
+                    <div class="border-l-2 border-green-300 absolute h-full top-0 left-4"></div>
+                    <div class="mb-8 ml-12 relative">
+                        <div class="bg-green-600 text-white w-8 h-8 rounded-full absolute -left-16 top-1 flex items-center justify-center font-bold">1</div>
+                        <h3 class="font-bold text-xl mb-1">お問い合わせ・見学予約</h3>
+                        <p>まずはフォームからお気軽にご連絡ください。施設見学も随時受け付けています。</p>
+                    </div>
+                    <div class="mb-8 ml-12 relative">
+                        <div class="bg-green-600 text-white w-8 h-8 rounded-full absolute -left-16 top-1 flex items-center justify-center font-bold">2</div>
+                        <h3 class="font-bold text-xl mb-1">見学・打ち合わせ</h3>
+                        <p>実際に施設をご案内し、あなたの働き方に合ったプランをご提案します。</p>
+                    </div>
+                    <div class="mb-8 ml-12 relative">
+                        <div class="bg-green-600 text-white w-8 h-8 rounded-full absolute -left-16 top-1 flex items-center justify-center font-bold">3</div>
+                        <h3 class="font-bold text-xl mb-1">会員登録・ご契約</h3>
+                        <p>利用規約にご同意いただき、手続きが完了すれば、あなたもmoribito荘の一員です。</p>
+                    </div>
+                    <div class="ml-12 relative">
+                        <div class="bg-green-600 text-white w-8 h-8 rounded-full absolute -left-16 top-1 flex items-center justify-center font-bold">4</div>
+                        <h3 class="font-bold text-xl mb-1">ご利用開始</h3>
+                        <p>自分らしい働き方を、この場所からスタートさせましょう。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- よくある質問 -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <h2 class="text-3xl font-bold text-center text-green-800 mb-12">よくある質問</h2>
+                <div class="space-y-4">
+                    <details class="bg-gray-50 p-4 rounded-lg">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between items-center">
+                            法人登記や住所利用は可能ですか？
+                            <span class="plus-icon transition-transform duration-300 text-green-600 text-2xl">+</span>
+                        </summary>
+                        <p class="mt-4 text-gray-700">はい、月額会員様はオプションで法人登記・住所利用サービスをご利用いただけます。詳細はお問い合わせください。</p>
+                    </details>
+                    <details class="bg-gray-50 p-4 rounded-lg">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between items-center">
+                            プリンターやモニターはありますか？
+                            <span class="plus-icon transition-transform duration-300 text-green-600 text-2xl">+</span>
+                        </summary>
+                        <p class="mt-4 text-gray-700">はい、共用の複合機（有料）と、貸し出し用のモニターをご用意しています。数に限りがございますのでご了承ください。</p>
+                    </details>
+                    <details class="bg-gray-50 p-4 rounded-lg">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between items-center">
+                            セキュリティはどのようになっていますか？
+                            <span class="plus-icon transition-transform duration-300 text-green-600 text-2xl">+</span>
+                        </summary>
+                        <p class="mt-4 text-gray-700">入口はスマートロックで施錠されており、会員様のみ入室可能です。また、防犯カメラも設置しておりますのでご安心ください。</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-green-900 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">はたけもり</h4>
+                    <p class="text-green-200">畑からはじまる、<br>あなたの”やってみたい”を応援する場所</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">サイトマップ</h4>
+                    <ul class="space-y-2 text-green-200">
+                        <li><a href="#" class="hover:text-white">はたけもりについて</a></li>
+                        <li><a href="share-kitchen.html" class="hover:text-white">シェアキッチン COME Lab</a></li>
+                        <li><a href="share-office.html" class="hover:text-white">シェアオフィス moribito荘</a></li>
+                        <li><a href="#" class="hover:text-white">お知らせ・イベント</a></li>
+                        <li><a href="#" class="hover:text-white">アクセス</a></li>
+                        <li><a href="#" class="hover:text-white">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">お問い合わせ</h4>
+                    <p class="text-green-200">ご見学やご利用に関するご相談など、<br>お気軽にお問い合わせください。</p>
+                    <a href="#" class="mt-4 inline-block bg-amber-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-amber-700 transition-colors">お問い合わせフォーム</a>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-green-800 pt-8 text-center text-sm text-green-300">
+                <p>&copy; 2025 はたけもり. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // モバイルメニューのトグル
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
