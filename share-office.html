@@ -13,7 +13,7 @@
             font-family: 'Noto Sans JP', 'Inter', sans-serif;
         }
         .hero-office-bg {
-            background-image: url('https://placehold.co/1600x800/f0e6d2/333333?text=%E3%82%B7%E3%82%A7%E3%82%A2%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B9%E3%81%AE%E8%90%BD%E3%81%A1%E7%9D%80%E3%81%84%E3%81%9F%E9%9B%B0%E5%9B%B2%E6%B0%97');
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShpxoq9jigaUPUgjw2hX-_OvY_lDs64PUWuQ&s');
             background-size: cover;
             background-position: center;
         }
@@ -64,8 +64,8 @@
     <main>
         <!-- ヒーローセクション -->
         <section class="hero-office-bg text-white">
-            <div class="bg-black/40 h-full w-full flex items-center justify-center py-24 md:py-32">
-                <div class="text-center">
+            <div class="bg-black/50 h-full w-full flex items-center justify-center py-24 md:py-32">
+                <div class="text-center px-4">
                     <p class="text-lg md:text-xl mb-2">Share Office</p>
                     <h1 class="text-4xl md:text-6xl font-bold">moribito荘</h1>
                     <p class="mt-4 text-xl md:text-2xl">昭和の趣と、新しい働き方が交差する場所。</p>
@@ -113,30 +113,38 @@
         <section class="py-16 md:py-24">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-green-800 mb-12">スペース紹介</h2>
-                <!-- モリの間 -->
-                <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-16">
-                    <img src="https://placehold.co/600x400/fff8e1/333333?text=%E3%83%A2%E3%83%AA%E3%81%AE%E9%96%93%EF%BC%88%E3%82%B3%E3%83%AF%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%EF%BC%89" alt="モリの間" class="rounded-lg shadow-lg w-full h-auto">
-                    <div>
-                        <h3 class="font-bold text-2xl mb-2">モリの間 <span class="text-lg font-normal text-gray-600">（コワーキングスペース）</span></h3>
-                        <p>開放的なフリーアドレスのスペース。他の利用者とのコミュニケーションも楽しめます。飲食やおしゃべりもOK。</p>
+                <div class="space-y-16">
+                    <!-- モリの間 -->
+                    <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                        <img src="https://placehold.co/600x400/fff8e1/333333?text=%E3%83%A2%E3%83%AA%E3%81%AE%E9%96%93" alt="モリの間" class="rounded-lg shadow-lg w-full h-auto">
+                        <div>
+                            <h3 class="font-bold text-2xl mb-2">モリの間 <span class="text-lg font-normal text-gray-600">（コワーキングスペース）</span></h3>
+                            <p class="mb-4">飲食・おしゃべりOKのコワーキングスペース。会員同士の交流や、リラックスしながらの作業に最適です。</p>
+                            <span class="inline-block bg-amber-200 text-amber-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">飲食OK</span>
+                            <span class="inline-block bg-amber-200 text-amber-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">会話OK</span>
+                        </div>
                     </div>
-                </div>
-                <!-- 荘の間 -->
-                <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-16">
-                     <div class="md:order-2">
-                        <img src="https://placehold.co/600x400/fff8e1/333333?text=%E8%8D%98%E3%81%AE%E9%96%93%EF%BC%88%E5%80%8B%E5%AE%A4%E3%83%96%E3%83%BC%E3%82%B9%EF%BC%89" alt="荘の間" class="rounded-lg shadow-lg w-full h-auto">
+                    <!-- 荘の間 -->
+                    <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                         <div class="md:order-2">
+                            <img src="https://placehold.co/600x400/fff8e1/333333?text=%E8%8D%98%E3%81%AE%E9%96%93" alt="荘の間" class="rounded-lg shadow-lg w-full h-auto">
+                        </div>
+                        <div class="md:order-1">
+                            <h3 class="font-bold text-2xl mb-2">荘の間 <span class="text-lg font-normal text-gray-600">（シェアオフィス）</span></h3>
+                            <p class="mb-4">月額固定席プランの会員専用エリア。パーテーションで区切られた集中ブースで、静かに作業に取り組めます。</p>
+                             <span class="inline-block bg-blue-200 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">集中エリア</span>
+                             <span class="inline-block bg-blue-200 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">固定席</span>
+                        </div>
                     </div>
-                    <div class="md:order-1">
-                        <h3 class="font-bold text-2xl mb-2">荘の間 <span class="text-lg font-normal text-gray-600">（シェアオフィス）</span></h3>
-                        <p>月額会員専用の固定席エリア。パーテーションで区切られており、より集中したい方におすすめです。</p>
-                    </div>
-                </div>
-                 <!-- 畑の間 -->
-                <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-                    <img src="https://placehold.co/600x400/fff8e1/333333?text=%E7%95%91%E3%81%AE%E9%96%93%EF%BC%88%E4%BC%9A%E8%AD%B0%E5%AE%A4%EF%BC%89" alt="畑の間" class="rounded-lg shadow-lg w-full h-auto">
-                    <div>
-                        <h3 class="font-bold text-2xl mb-2">畑の間 <span class="text-lg font-normal text-gray-600">（会議室）</span></h3>
-                        <p>打ち合わせやオンライン会議に使える個室。ホワイトボードも完備しています。（要予約）</p>
+                     <!-- 畑の間 -->
+                    <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                        <img src="https://placehold.co/600x400/fff8e1/333333?text=%E7%95%91%E3%81%AE%E9%96%93" alt="畑の間" class="rounded-lg shadow-lg w-full h-auto">
+                        <div>
+                            <h3 class="font-bold text-2xl mb-2">畑の間 <span class="text-lg font-normal text-gray-600">（会議室）</span></h3>
+                            <p class="mb-4">4名まで利用可能な個室の会議室。ホワイトボードを完備しており、打ち合わせやオンライン会議に最適です。</p>
+                            <span class="inline-block bg-gray-200 text-gray-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">要予約</span>
+                            <span class="inline-block bg-gray-200 text-gray-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">個室</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -150,48 +158,63 @@
                     <table class="w-full text-left border-collapse">
                         <thead>
                             <tr>
-                                <th class="border-b-2 border-green-700 p-4 text-lg">プラン</th>
-                                <th class="border-b-2 border-green-700 p-4 text-lg">料金（税込）</th>
-                                <th class="border-b-2 border-green-700 p-4 text-lg">利用可能スペース</th>
-                                <th class="border-b-2 border-green-700 p-4 text-lg"></th>
+                                <th class="border-b-2 border-green-700 p-4 text-lg bg-green-50">プラン</th>
+                                <th class="border-b-2 border-green-700 p-4 text-lg bg-green-50">料金（税込）</th>
+                                <th class="border-b-2 border-green-700 p-4 text-lg bg-green-50">利用可能スペース</th>
+                                <th class="border-b-2 border-green-700 p-4 text-lg bg-green-50">備考</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="hover:bg-amber-50">
+                            <tr class="hover:bg-gray-50">
                                 <td class="border-b p-4 font-bold">ドロップイン</td>
-                                <td class="border-b p-4">2時間: ¥1,000<br>1日: ¥2,000</td>
+                                <td class="border-b p-4">2時間: 1,100円<br>1日: 2,200円</td>
                                 <td class="border-b p-4">モリの間</td>
-                                <td class="border-b p-4"><a href="#" class="text-green-700 font-bold hover:underline">問い合わせる</a></td>
+                                <td class="border-b p-4">一時利用に</td>
                             </tr>
-                            <tr class="hover:bg-amber-50">
+                            <tr class="hover:bg-gray-50">
                                 <td class="border-b p-4 font-bold">月額フリー席プラン</td>
-                                <td class="border-b p-4">¥15,000 / 月</td>
+                                <td class="border-b p-4">16,500円 / 月</td>
                                 <td class="border-b p-4">モリの間</td>
-                                <td class="border-b p-4"><a href="#" class="text-green-700 font-bold hover:underline">問い合わせる</a></td>
+                                <td class="border-b p-4">登記・ポスト利用可（有料）</td>
                             </tr>
-                            <tr class="hover:bg-amber-50">
+                            <tr class="hover:bg-gray-50">
                                 <td class="border-b p-4 font-bold">月額固定席プラン</td>
-                                <td class="border-b p-4">¥25,000 / 月</td>
+                                <td class="border-b p-4">27,500円 / 月</td>
                                 <td class="border-b p-4">荘の間（専用席）<br>モリの間</td>
-                                <td class="border-b p-4"><a href="#" class="text-green-700 font-bold hover:underline">問い合わせる</a></td>
+                                <td class="border-b p-4">登記・ポスト利用可（有料）</td>
                             </tr>
-                            <tr class="hover:bg-amber-50">
+                            <tr class="hover:bg-gray-50">
                                 <td class="border-b p-4 font-bold">会議室利用</td>
-                                <td class="border-b p-4">¥1,500 / 時間</td>
+                                <td class="border-b p-4">会員: 1,100円 / 時間<br>非会員: 1,650円 / 時間</td>
                                 <td class="border-b p-4">畑の間</td>
-                                <td class="border-b p-4"><a href="#" class="text-green-700 font-bold hover:underline">問い合わせる</a></td>
+                                <td class="border-b p-4">要予約</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                 <div class="text-center mt-8">
-                    <a href="#" class="inline-block bg-amber-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-amber-700 transition-colors">見学を予約する</a>
+                 <div class="text-center mt-12">
+                    <a href="#" class="inline-block bg-amber-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-amber-700 transition-colors">見学を予約・問い合わせる</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ギャラリーセクション -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-green-800 mb-12">ギャラリー</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <img src="https://placehold.co/600x400/e2d6c3/333333?text=%E5%A4%96%E8%A6%B3" class="rounded-lg shadow-md aspect-video object-cover" alt="moribito荘の外観">
+                    <img src="https://placehold.co/600x400/e2d6c3/333333?text=%E3%83%A2%E3%83%AA%E3%81%AE%E9%96%93" class="rounded-lg shadow-md aspect-video object-cover" alt="モリの間（コワーキングスペース）">
+                    <img src="https://placehold.co/600x400/e2d6c3/333333?text=%E8%8D%98%E3%81%AE%E9%96%93" class="rounded-lg shadow-md aspect-video object-cover" alt="荘の間（シェアオフィス）">
+                    <img src="https://placehold.co/600x400/e2d6c3/333333?text=%E7%95%91%E3%81%AE%E9%96%93" class="rounded-lg shadow-md aspect-video object-cover" alt="畑の間（会議室）">
+                    <img src="https://placehold.co/600x400/e2d6c3/333333?text=%E5%85%B1%E6%9C%89%E3%82%AD%E3%83%83%E3%83%81%E3%83%B3" class="rounded-lg shadow-md aspect-video object-cover" alt="共有キッチン">
+                    <img src="https://placehold.co/600x400/e2d6c3/333333?text=%E7%AA%93%E3%81%8B%E3%82%89%E3%81%AE%E眺%E3%82%81" class="rounded-lg shadow-md aspect-video object-cover" alt="窓からの眺め">
                 </div>
             </div>
         </section>
 
         <!-- ご利用の流れ -->
-        <section class="py-16 md:py-24">
+        <section class="py-16 md:py-24 bg-white">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center text-green-800 mb-12">ご利用の流れ</h2>
                 <div class="max-w-3xl mx-auto relative">
@@ -220,31 +243,41 @@
             </div>
         </section>
 
-        <!-- よくある質問 -->
-        <section class="py-16 md:py-24 bg-white">
+        <!-- よくある質問・利用規約 -->
+        <section class="py-16 md:py-24">
             <div class="container mx-auto px-6 max-w-3xl">
-                <h2 class="text-3xl font-bold text-center text-green-800 mb-12">よくある質問</h2>
+                <h2 class="text-3xl font-bold text-center text-green-800 mb-12">よくある質問・利用規約</h2>
                 <div class="space-y-4">
-                    <details class="bg-gray-50 p-4 rounded-lg">
+                    <details class="bg-white p-4 rounded-lg shadow-sm">
                         <summary class="font-bold text-lg cursor-pointer flex justify-between items-center">
                             法人登記や住所利用は可能ですか？
                             <span class="plus-icon transition-transform duration-300 text-green-600 text-2xl">+</span>
                         </summary>
                         <p class="mt-4 text-gray-700">はい、月額会員様はオプションで法人登記・住所利用サービスをご利用いただけます。詳細はお問い合わせください。</p>
                     </details>
-                    <details class="bg-gray-50 p-4 rounded-lg">
+                    <details class="bg-white p-4 rounded-lg shadow-sm">
                         <summary class="font-bold text-lg cursor-pointer flex justify-between items-center">
                             プリンターやモニターはありますか？
                             <span class="plus-icon transition-transform duration-300 text-green-600 text-2xl">+</span>
                         </summary>
                         <p class="mt-4 text-gray-700">はい、共用の複合機（有料）と、貸し出し用のモニターをご用意しています。数に限りがございますのでご了承ください。</p>
                     </details>
-                    <details class="bg-gray-50 p-4 rounded-lg">
+                    <details class="bg-white p-4 rounded-lg shadow-sm">
                         <summary class="font-bold text-lg cursor-pointer flex justify-between items-center">
                             セキュリティはどのようになっていますか？
                             <span class="plus-icon transition-transform duration-300 text-green-600 text-2xl">+</span>
                         </summary>
                         <p class="mt-4 text-gray-700">入口はスマートロックで施錠されており、会員様のみ入室可能です。また、防犯カメラも設置しておりますのでご安心ください。</p>
+                    </details>
+                     <details class="bg-white p-4 rounded-lg shadow-sm">
+                        <summary class="font-bold text-lg cursor-pointer flex justify-between items-center">
+                            利用規約について
+                            <span class="plus-icon transition-transform duration-300 text-green-600 text-2xl">+</span>
+                        </summary>
+                        <div class="mt-4 text-gray-700 prose max-w-none">
+                            <p>施設の目的、利用資格、利用料金、利用ルール、イベント開催、ロッカー利用、私物管理、解約、契約解除など、詳細な規約を定めています。</p>
+                            <p>ご契約前に必ずご確認いただき、同意の上でご利用をお願いいたします。詳細な規約内容は見学時にお渡しいたします。</p>
+                        </div>
                     </details>
                 </div>
             </div>
